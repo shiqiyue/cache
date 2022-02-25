@@ -1,4 +1,4 @@
-module github.com/go-redis/cache/v8
+module github.com/shiqiyue/cache
 
 go 1.13
 

@@ -1,7 +1,7 @@
 # Redis cache library for Golang
 
 [![Build Status](https://travis-ci.org/go-redis/cache.svg)](https://travis-ci.org/go-redis/cache)
-[![GoDoc](https://godoc.org/github.com/go-redis/cache?status.svg)](https://pkg.go.dev/github.com/go-redis/cache/v8?tab=doc)
+[![GoDoc](https://godoc.org/github.com/go-redis/cache?status.svg)](https://pkg.go.dev/github.com/shiqiyue/cache?tab=doc)
 
 go-redis/cache library implements a cache using Redis as a key/value storage. It uses
 [MessagePack](https://github.com/vmihailenco/msgpack) to marshal values.
@@ -25,7 +25,7 @@ go mod init github.com/my/repo
 And then install go-redis/cache/v8 (note _v8_ in the import; omitting it is a popular mistake):
 
 ```shell
-go get github.com/go-redis/cache/v8
+go get github.com/shiqiyue/cache
 ```
 
 ## Quickstart
@@ -39,7 +39,7 @@ import (
     "time"
 
     "github.com/go-redis/redis/v8"
-    "github.com/go-redis/cache/v8"
+    "github.com/shiqiyue/cache"
 )
 
 type Object struct {

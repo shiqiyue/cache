@@ -170,9 +170,10 @@ func (cd *Cache) set(item *Item) ([]byte, bool, error) {
 	}
 
 	ttl := item.ttl()
-	if ttl == 0 {
+	// 原仓库这个判断ttl = 0的话，则不保存到Redis,这儿修改下，也要保存到redis
+	/*if ttl == 0 {
 		return b, true, nil
-	}
+	}*/
 
 	if item.SetXX {
 		return b, true, cd.opt.Redis.SetXX(item.Context(), item.Key, b, ttl).Err()
