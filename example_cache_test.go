@@ -3,9 +3,8 @@ package cache_test
 import (
 	"context"
 	"fmt"
-	"time"
-
 	"github.com/go-redis/redis/v8"
+	"time"
 
 	"github.com/shiqiyue/cache"
 )

@@ -1,10 +1,9 @@
 package cache_test
 
 import (
+	"github.com/shiqiyue/cache"
 	"strings"
 	"testing"
-
-	"github.com/shiqiyue/cache"
 )
 
 func BenchmarkOnce(b *testing.B) {

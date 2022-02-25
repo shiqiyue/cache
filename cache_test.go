@@ -3,17 +3,16 @@ package cache_test
 import (
 	"context"
 	"errors"
+	"github.com/go-redis/redis/v8"
+	"github.com/shiqiyue/cache"
 	"io"
 	"sync"
 	"sync/atomic"
 	"testing"
 	"time"
 
-	"github.com/go-redis/redis/v8"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-
-	"github.com/shiqiyue/cache"
 )
 
 func TestGinkgo(t *testing.T) {

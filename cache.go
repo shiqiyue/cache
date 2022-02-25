@@ -4,11 +4,11 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/go-redis/redis/v8"
 	"log"
 	"sync/atomic"
 	"time"
 
-	"github.com/go-redis/redis/v8"
 	"github.com/klauspost/compress/s2"
 	"github.com/vmihailenco/msgpack/v5"
 	"golang.org/x/sync/singleflight"
